@@ -1,0 +1,39 @@
+[
+  {
+    "name": "weather_db",
+    "profile_name": "Jaffna Weather Station",
+    "location": "Jaffna",
+    "data": [
+      {
+        "timestamp": "2026-01-01T08:00:00Z",
+        "latitude": 9.6615,
+        "longitude": 80.0255,
+        "temperature": 30.5,
+        "humidity": 65,
+        "pressure": 1012,
+        "wind_speed": 18.5,
+        "rainfall": 0
+      },
+      {
+        "timestamp": "2026-01-01T09:00:00Z",
+        "latitude": 9.6615,
+        "longitude": 80.0255,
+        "temperature": 32.1,
+        "humidity": 62,
+        "pressure": 1011,
+        "wind_speed": 19.8,
+        "rainfall": 0
+      },
+      {
+        "timestamp": "2026-01-01T10:00:00Z",
+        "latitude": 9.6615,
+        "longitude": 80.0255,
+        "temperature": 33.8,
+        "humidity": 58,
+        "pressure": 1010,
+        "wind_speed": 21.2,
+        "rainfall": 0
+      }
+    ]
+  }
+]

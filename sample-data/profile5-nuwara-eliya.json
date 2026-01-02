@@ -1,0 +1,39 @@
+[
+  {
+    "name": "weather_db",
+    "profile_name": "Nuwara Eliya Weather Station",
+    "location": "Nuwara Eliya",
+    "data": [
+      {
+        "timestamp": "2026-01-01T08:00:00Z",
+        "latitude": 6.9497,
+        "longitude": 80.7891,
+        "temperature": 16.5,
+        "humidity": 88,
+        "pressure": 1018,
+        "wind_speed": 6.5,
+        "rainfall": 3.5
+      },
+      {
+        "timestamp": "2026-01-01T09:00:00Z",
+        "latitude": 6.9497,
+        "longitude": 80.7891,
+        "temperature": 18.2,
+        "humidity": 85,
+        "pressure": 1017,
+        "wind_speed": 7.2,
+        "rainfall": 2.1
+      },
+      {
+        "timestamp": "2026-01-01T10:00:00Z",
+        "latitude": 6.9497,
+        "longitude": 80.7891,
+        "temperature": 19.8,
+        "humidity": 82,
+        "pressure": 1016,
+        "wind_speed": 8.5,
+        "rainfall": 0.5
+      }
+    ]
+  }
+]

@@ -1,0 +1,12 @@
+{
+  "name": "Kalagunaya Weather Station 2",
+  "profile_name": "Kalagunaya - V1",
+  "location": "Nuwara Eliya, Sri Lanka",
+  "data": [],
+  "metadata": {
+    "source": "Kalagunaya Sensor Network",
+    "topic": "weather",
+    "importDate": "2026-01-02",
+    "originalFile": "kalagunaya_v2_1.json"
+  }
+}

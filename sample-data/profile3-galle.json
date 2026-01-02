@@ -1,0 +1,39 @@
+[
+  {
+    "name": "weather_db",
+    "profile_name": "Galle Weather Station",
+    "location": "Galle",
+    "data": [
+      {
+        "timestamp": "2026-01-01T08:00:00Z",
+        "latitude": 6.0535,
+        "longitude": 80.2210,
+        "temperature": 27.8,
+        "humidity": 78,
+        "pressure": 1014,
+        "wind_speed": 15.5,
+        "rainfall": 0
+      },
+      {
+        "timestamp": "2026-01-01T09:00:00Z",
+        "latitude": 6.0535,
+        "longitude": 80.2210,
+        "temperature": 29.2,
+        "humidity": 74,
+        "pressure": 1013,
+        "wind_speed": 16.2,
+        "rainfall": 0
+      },
+      {
+        "timestamp": "2026-01-01T10:00:00Z",
+        "latitude": 6.0535,
+        "longitude": 80.2210,
+        "temperature": 30.5,
+        "humidity": 71,
+        "pressure": 1012,
+        "wind_speed": 17.8,
+        "rainfall": 0
+      }
+    ]
+  }
+]

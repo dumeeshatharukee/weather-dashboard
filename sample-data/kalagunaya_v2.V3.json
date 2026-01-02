@@ -1,0 +1,457 @@
+[{
+  "timestamp": {
+    "$date": "2023-07-29T13:03:55.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "percentage_light_intensity": 7,
+  "pressure": 81279.3,
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.103Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a1a"
+  },
+  "temperature": 23.6,
+  "humidity": 60.2
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T13:23:08.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 20.7,
+  "humidity": 58.5,
+  "pressure": 81349.8,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.109Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a1d"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T20:25:50.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 19,
+  "humidity": 67.5,
+  "pressure": 81266.4,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.118Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a25"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T16:25:35.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 20.1,
+  "humidity": 58.4,
+  "pressure": 81451.4,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.113Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a21"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T17:25:39.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 19.7,
+  "humidity": 61.5,
+  "pressure": 81435.3,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.114Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a22"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T15:25:31.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 20.4,
+  "humidity": 53.3,
+  "pressure": 81445.6,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.112Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a20"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T21:25:54.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 18.9,
+  "humidity": 67.6,
+  "pressure": 81230.9,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.120Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a26"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T14:25:27.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 20.4,
+  "humidity": 51.9,
+  "pressure": 81404.6,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.111Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a1f"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T18:25:43.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 19.3,
+  "humidity": 65.2,
+  "pressure": 81385.7,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.116Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a23"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T22:25:58.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 19.2,
+  "humidity": 68.8,
+  "pressure": 81244,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.121Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a27"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T19:25:47.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 19.2,
+  "humidity": 67,
+  "pressure": 81320.5,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.117Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a24"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T23:26:02.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 19.2,
+  "humidity": 69.4,
+  "pressure": 81240,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.122Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a28"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T13:18:56.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 20.4,
+  "humidity": 58.7,
+  "pressure": 81345.1,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.105Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a1b"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-03T00:26:06.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 19.1,
+  "humidity": 67.2,
+  "pressure": 81276.3,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.123Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a29"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 18
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T13:21:03.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 20.5,
+  "humidity": 58.9,
+  "pressure": 81344.8,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.107Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a1c"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-02T13:25:23.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "temperature": 20.9,
+  "humidity": 56,
+  "pressure": 81353.6,
+  "createAt": {
+    "$date": "2023-08-12T09:16:28.110Z"
+  },
+  "_id": {
+    "$oid": "64d74dec3c96e72069601a1e"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 7
+},
+{
+  "timestamp": {
+    "$date": "2023-08-12T10:16:59.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "percentage_light_intensity": 57,
+  "temperature": 27.7,
+  "humidity": 48.5,
+  "pressure": 81103.9,
+  "createAt": {
+    "$date": "2023-08-12T11:55:28.037Z"
+  },
+  "_id": {
+    "$oid": "64d773303c96e72069601a2b"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ]
+},
+{
+  "timestamp": {
+    "$date": "2023-08-12T09:16:56.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "percentage_light_intensity": 21,
+  "temperature": 29.8,
+  "humidity": 46.7,
+  "pressure": 81119.9,
+  "createAt": {
+    "$date": "2023-08-12T11:55:28.035Z"
+  },
+  "_id": {
+    "$oid": "64d773303c96e72069601a2a"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ]
+},
+{
+  "timestamp": {
+    "$date": "2023-08-12T10:49:05.000Z"
+  },
+  "metadata": {
+    "joined_sensor_key": "temperature_humidity_pressure_percentage_light_intensity_precipitation_coordinates",
+    "soruce": "app",
+    "topic": "weather"
+  },
+  "coordinates": [
+    6.9493805,
+    80.7888061
+  ],
+  "percentage_light_intensity": 61,
+  "precipitation": 0,
+  "temperature": 28.6,
+  "humidity": 46.2,
+  "pressure": 81072.7,
+  "createAt": {
+    "$date": "2023-08-12T11:55:28.038Z"
+  },
+  "_id": {
+    "$oid": "64d773303c96e72069601a2c"
+  }
+}]

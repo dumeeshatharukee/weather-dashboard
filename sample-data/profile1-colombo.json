@@ -1,0 +1,39 @@
+[
+  {
+    "name": "weather_db",
+    "profile_name": "Colombo Weather Station",
+    "location": "Colombo",
+    "data": [
+      {
+        "timestamp": "2026-01-01T08:00:00Z",
+        "latitude": 6.9271,
+        "longitude": 79.8612,
+        "temperature": 28.5,
+        "humidity": 75,
+        "pressure": 1013,
+        "wind_speed": 12.5,
+        "rainfall": 0
+      },
+      {
+        "timestamp": "2026-01-01T09:00:00Z",
+        "latitude": 6.9271,
+        "longitude": 79.8612,
+        "temperature": 29.8,
+        "humidity": 72,
+        "pressure": 1012,
+        "wind_speed": 13.2,
+        "rainfall": 0
+      },
+      {
+        "timestamp": "2026-01-01T10:00:00Z",
+        "latitude": 6.9271,
+        "longitude": 79.8612,
+        "temperature": 31.2,
+        "humidity": 68,
+        "pressure": 1011,
+        "wind_speed": 14.8,
+        "rainfall": 0
+      }
+    ]
+  }
+]
