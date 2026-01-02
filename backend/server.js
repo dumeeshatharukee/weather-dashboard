@@ -14,16 +14,24 @@ app.use(express.json());
 
 // MongoDB Connection
 let db;
-const client = new MongoClient(process.env.MONGODB_URI);
+let client;
 
 async function connectDB() {
+  if (db) {
+    return db;
+  }
+  
   try {
+    if (!client) {
+      client = new MongoClient(process.env.MONGODB_URI);
+    }
     await client.connect();
     db = client.db('weather_db');
     console.log('✅ Connected to MongoDB');
+    return db;
   } catch (error) {
     console.error('❌ MongoDB connection error:', error);
-    process.exit(1);
+    throw error;
   }
 }
 
@@ -60,6 +68,7 @@ app.get('/api/health', (req, res) => {
 // Get all profiles with latest coordinates
 app.get('/api/profiles', async (req, res) => {
   try {
+    await connectDB();
     const profiles = await db.collection('profiles').find({}).toArray();
     
     const profilesWithLatest = profiles.map(profile => {
@@ -96,6 +105,7 @@ app.get('/api/profiles', async (req, res) => {
 // Get specific profile by ID
 app.get('/api/profiles/:id', async (req, res) => {
   try {
+    await connectDB();
     const { id } = req.params;
     
     if (!ObjectId.isValid(id)) {
@@ -144,6 +154,7 @@ app.get('/api/profiles/:id', async (req, res) => {
 // Get time series data for a specific profile
 app.get('/api/profiles/:id/timeseries', async (req, res) => {
   try {
+    await connectDB();
     const { id } = req.params;
     
     if (!ObjectId.isValid(id)) {
@@ -217,16 +228,21 @@ app.get('/api/profiles/:id/timeseries', async (req, res) => {
   }
 });
 
-// Start server
-connectDB().then(() => {
+// Export for Vercel serverless
+export default app;
+
+// Start server (for local development)
+if (process.env.NODE_ENV !== 'production') {
   app.listen(PORT, () => {
     console.log(`🚀 Server running on http://localhost:${PORT}`);
   });
-});
+}
 
 // Graceful shutdown
 process.on('SIGINT', async () => {
   console.log('\n👋 Shutting down gracefully...');
-  await client.close();
+  if (client) {
+    await client.close();
+  }
   process.exit(0);
 });
