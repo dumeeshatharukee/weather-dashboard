@@ -6,10 +6,23 @@ import dotenv from 'dotenv';
 dotenv.config();
 
 const app = express();
-const PORT = process.env.PORT || 5000;
+const PORT = Number.parseInt(process.env.PORT || '5000', 10);
+const HOST = process.env.HOST || '0.0.0.0';
 
 // Middleware
-app.use(cors());
+const corsOrigin = process.env.CORS_ORIGIN;
+if (corsOrigin) {
+  app.use(
+    cors({
+      origin: corsOrigin
+        .split(',')
+        .map((origin) => origin.trim())
+        .filter(Boolean),
+    })
+  );
+} else {
+  app.use(cors());
+}
 app.use(express.json());
 
 // MongoDB Connection
@@ -22,11 +35,16 @@ async function connectDB() {
   }
   
   try {
+    const mongoUri = process.env.MONGODB_URI;
+    if (!mongoUri) {
+      throw new Error('MONGODB_URI is not set');
+    }
+
     if (!client) {
-      client = new MongoClient(process.env.MONGODB_URI);
+      client = new MongoClient(mongoUri);
     }
     await client.connect();
-    db = client.db('weather_db');
+    db = client.db(process.env.MONGODB_DB || 'weather_db');
     console.log('✅ Connected to MongoDB');
     return db;
   } catch (error) {
@@ -231,15 +249,24 @@ app.get('/api/profiles/:id/timeseries', async (req, res) => {
 // Export for Vercel serverless
 export default app;
 
-// Start server (for local development)
-if (process.env.NODE_ENV !== 'production') {
-  app.listen(PORT, () => {
-    console.log(`🚀 Server running on http://localhost:${PORT}`);
+// Start server (Railway/local). Avoid listening when deployed as serverless.
+const isServerless = Boolean(process.env.VERCEL);
+if (!isServerless) {
+  app.listen(PORT, HOST, () => {
+    console.log(`🚀 Server running on http://${HOST}:${PORT}`);
   });
 }
 
 // Graceful shutdown
 process.on('SIGINT', async () => {
+  console.log('\n👋 Shutting down gracefully...');
+  if (client) {
+    await client.close();
+  }
+  process.exit(0);
+});
+
+process.on('SIGTERM', async () => {
   console.log('\n👋 Shutting down gracefully...');
   if (client) {
     await client.close();
