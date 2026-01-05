@@ -12,10 +12,19 @@ function App() {
   const [timeSeriesData, setTimeSeriesData] = useState(null);
   const [loading, setLoading] = useState(true);
   const [error, setError] = useState(null);
+  const [lastUpdated, setLastUpdated] = useState(new Date());
 
   // Fetch all profiles on component mount
   useEffect(() => {
     fetchProfiles();
+    
+    // Auto-refresh every 60 seconds (1 minute)
+    const interval = setInterval(() => {
+      fetchProfiles();
+    }, 60000);
+
+    // Cleanup interval on component unmount
+    return () => clearInterval(interval);
   }, []);
 
   const fetchProfiles = async () => {
@@ -23,16 +32,40 @@ function App() {
       setLoading(true);
       setError(null);
       console.log('Fetching profiles from:', `${API_URL}/api/profiles`);
+      
+      // Start timing
+      const startTime = Date.now();
+      
       const response = await axios.get(`${API_URL}/api/profiles`);
       console.log('Profiles received:', response.data.data.length);
       console.log('First profile:', response.data.data[0]);
+      
+      // Calculate elapsed time and ensure minimum 2 seconds loading
+      const elapsedTime = Date.now() - startTime;
+      const minimumLoadingTime = 2000; // 2 seconds
+      const remainingTime = Math.max(0, minimumLoadingTime - elapsedTime);
+      
+      // Wait for remaining time if needed
+      await new Promise(resolve => setTimeout(resolve, remainingTime));
+      
       setProfiles(response.data.data);
+      setLastUpdated(new Date());
     } catch (err) {
       setError('Failed to fetch profiles. Please check if the backend is running.');
       console.error('Error fetching profiles:', err);
     } finally {
       setLoading(false);
     }
+  };
+
+  // Format time for display
+  const formatTime = (date) => {
+    return date.toLocaleTimeString('en-US', { 
+      hour: 'numeric',
+      minute: '2-digit',
+      second: '2-digit',
+      hour12: true 
+    });
   };
 
   // Fetch time series data when a profile is selected
@@ -106,9 +139,16 @@ function App() {
         )}
       </main>
 
-      <footer className="app-footer">
-        <p>Weather Data Visualization System | Profiles: {profiles.length}</p>
-      </footer>
+      <div className="status-bar">
+        <div className="status-item active-profiles">
+          <span className="status-label">ACTIVE PROFILES</span>
+          <span className="status-value">{profiles.length}</span>
+        </div>
+        <div className="status-item last-updated">
+          <span className="status-label">LAST UPDATED</span>
+          <span className="status-value">{formatTime(lastUpdated)}</span>
+        </div>
+      </div>
     </div>
   );
 }
