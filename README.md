@@ -52,7 +52,6 @@ weather-dashboard/
 │   ├── server.js           # Express server & API routes
 │   ├── package.json        # Backend dependencies
 │   ├── .env.example        # Environment variables template
-│   └── Dockerfile          # Docker configuration for backend
 ├── frontend/
 │   ├── src/
 │   │   ├── components/
@@ -67,7 +66,6 @@ weather-dashboard/
 │   ├── index.html
 │   ├── package.json        # Frontend dependencies
 │   ├── vite.config.js      # Vite configuration
-│   └── Dockerfile          # Docker configuration for frontend
 ├── sample-data/            # Sample JSON files for testing
 │   ├── profile1-colombo.json
 │   ├── profile2-kandy.json
@@ -431,7 +429,7 @@ Your JSON files should follow this structure:
 ✅ Time series visualization with Chart.js  
 ✅ Responsive design for all devices  
 ✅ Error handling and loading states  
-✅ Docker support for easy deployment  
+✅ Easy deployment  
 ✅ Sample data for testing  
 
 ## 📧 Contact & Support

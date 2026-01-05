@@ -27,15 +27,6 @@
 
 4. **Access**: Open http://localhost:3000
 
-### Option 2: Docker (Recommended for Demo)
-
-```bash
-# Add your MongoDB URI to .env in backend/
-docker-compose up --build
-```
-
-Access at http://localhost:3000
-
 ## What to Demonstrate
 
 1. ✅ **Map View**: Shows 5 weather stations across Sri Lanka
