@@ -15,12 +15,15 @@ function MapResizer() {
   return null;
 }
 
-// Fix for default marker icons in React-Leaflet
-delete L.Icon.Default.prototype._getIconUrl;
-L.Icon.Default.mergeOptions({
+// Fix for default marker icons in React-Leaflet (updated to avoid deprecated Components)
+const defaultIcon = L.icon({
   iconRetinaUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon-2x.png',
   iconUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-icon.png',
   shadowUrl: 'https://unpkg.com/leaflet@1.9.4/dist/images/marker-shadow.png',
+  iconSize: [25, 41],
+  iconAnchor: [12, 41],
+  popupAnchor: [1, -34],
+  shadowSize: [41, 41]
 });
 
 // Custom icon for selected marker
@@ -91,7 +94,7 @@ function MapView({ profiles, onProfileClick, selectedProfile }) {
             <Marker 
               key={profile._id} 
               position={[latitude, longitude]}
-              icon={isSelected ? selectedIcon : new L.Icon.Default()}
+              icon={isSelected ? selectedIcon : defaultIcon}
               eventHandlers={{
                 click: () => onProfileClick(profile._id)
               }}
