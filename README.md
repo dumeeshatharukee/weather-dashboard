@@ -444,6 +444,5 @@ This project is licensed under the MIT License.
 
 ---
 
-**Built with ❤️ for Darimac Internship Application**
 
 Good luck with your demonstration! 🚀
